@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Handy Helper Add</title>
+  </head>
+  <body>
+      <p><h1>Add a Job</h1> <a href = '/'>Back</a> <a href ="/logout">Logout</a></p>
+      
+      <form action="/handy_app/processadd", method="POST">
+        {% csrf_token %}
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Title</label>
+                <input type="text" class="form-control" name="title" id="exampleFormControlInput1" placeholder="enter title">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Description</label>
+                <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Location</label>
+                <input type="text" class="form-control" name="destination" id="exampleFormControlInput1" placeholder="enter location">
+            </div>
+            <input type="submit" value="Submit">
+
+      </form>
+   
+    
+     
+
+
+
+    </body>
+    
+
+
+
+</html>
